@@ -44,6 +44,8 @@ const PokemonForm = () => {
                 back: ""
             });
         };
+        // FEEDBACk:
+        //     Make sure to make a post request to the json server so that the posting saves on refresh
     
     return (
         <div>
