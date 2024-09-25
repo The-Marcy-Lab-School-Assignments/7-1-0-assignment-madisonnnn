@@ -83,6 +83,41 @@
       "hp": 60,
       "front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/12.png",
       "back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/12.png"
+    },
+    {
+      "id": 13,
+      "name": "sqwdefrgt",
+      "hp": "sqwdefrgt",
+      "front": "qswdefrhty",
+      "back": "qwergthy"
+    },
+    {
+      "id": 14,
+      "name": "qswadsefgh",
+      "hp": "qadwsedrg",
+      "front": "adverts",
+      "back": "wdsefrgtyu"
+    },
+    {
+      "id": 15,
+      "name": "vbgnh",
+      "hp": "cvbn",
+      "front": "bam",
+      "back": "cvbn"
+    },
+    {
+      "id": 16,
+      "name": "asdf",
+      "hp": "sad",
+      "front": "sdfgs",
+      "back": "sdfgg"
+    },
+    {
+      "id": 17,
+      "name": "ASWDEFGH",
+      "hp": "SDWEFRGTY",
+      "front": "SADWEFGRTY",
+      "back": "sdfgh"
     }
   ]
 }

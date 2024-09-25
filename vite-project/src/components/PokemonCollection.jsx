@@ -4,7 +4,7 @@ import { useContext } from 'react';
 
 // TODO: import the PokemonContext and useContext
 
-const PokemonCollection = ({pokemonData}) => {
+const PokemonCollection = () => {
     const {allPokemon, setAllPokemon} = useContext(PokemonContext)
     // TODO: Replace this to get the pokemon from PokemonContext
     
@@ -16,7 +16,8 @@ const PokemonCollection = ({pokemonData}) => {
                 key={pokemon.id} 
                 name = {pokemon.name}
                 hp = {pokemon.hp}
-                image={pokemon.front}
+                front={pokemon.front}
+                back={pokemon.back}
                 />)
             )}
         </div>

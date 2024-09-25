@@ -39,7 +39,7 @@ const PokemonProvider = ({ children }) => {
 
             if (data) setAllPokemon(data)
             console.log(data)
-            if (error) setError(error.message)
+            if (error) console.log(error.message)
 
 
         }

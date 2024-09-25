@@ -22,10 +22,9 @@ const PokemonForm = () => {
         })
     }
 
-        const handleSubmit = (e) => {
+        const handleSubmit = async (e) => {
             e.preventDefault()
-    
-       
+
             const newPokemon = {
                 id: allPokemon.length + 1, 
                 name: formData.name,
@@ -34,16 +33,39 @@ const PokemonForm = () => {
                 back: formData.back
                 
             }
-    
-            setAllPokemon([...allPokemon, newPokemon])
+            try {
+                // Make a POST request to the JSON server
+                const response = await fetch('http://localhost:4000/pokemon', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(newPokemon),
+                });
+        
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+        
+                if(response.ok){
+                    const data = await response.json();
+                    setAllPokemon([...allPokemon, newPokemon.data])
+                }
+            
+
+            
     
             setFormData({
                 name: "",
                 hp: "",
                 front: "",
                 back: ""
-            });
-        };
+            })
+        }
+            catch (error) {
+                console.error('Error:', error)
+            }
+        }
         // FEEDBACk:
         //     Make sure to make a post request to the json server so that the posting saves on refresh
     
