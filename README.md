@@ -38,7 +38,7 @@ Your goal is to meet at least 75% of these requirements to complete the assignme
 
 **Functionality**
 - [x] On load of the page, a user see a list of pokemon cards displaying each pokemon's name, front sprite, and HP level.
-- [ ] A user can click on a pokemon card to toggle seeing its front sprite or back sprite.
+- [x] A user can click on a pokemon card to toggle seeing its front sprite or back sprite.
 - [ ] A user can use the search bar to filter pokemon by name.
 - [ ] A user can fill out and submit the form to create a new pokemon. This will display the new pokemon on the page and the new pokemon data should persist, even after the page is refreshed. This means you'll have to make a POST request to our JSON Server API!
 - [ ] Bonus: A user can additionally filter pokemon by HP
